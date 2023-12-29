@@ -37,10 +37,20 @@
         <div class="wrapper hero__wrapper bottom-border">
           <div class="hero__content">
             <picture>
+              <source
+                media="(min-width: 62.5em)"
+                src="/assets/images/image-profile-desktop.png"
+              />
+              <source
+                media="(min-width: 37.5em)"
+                src="/assets/images/image-profile-tablet.png"
+              />
               <img
                 class="hero__image"
-                src="/assets/images/image-profile.JPG"
+                src="/assets/images/image-profile-mobile.png"
                 alt="picture of Mowei Wu"
+                width-="174"
+                height="383"
               />
             </picture>
             
@@ -114,7 +124,7 @@
               </p>
               <div class="projects__links">
                 <a href="" class="underline">View Project</a>
-                <a href="" class="underline">View Code</a>
+                <a href="https://github.com/momowo2023/Sass-project.git" class="underline">View Code</a>
               </div>
             </div>
 
@@ -122,24 +132,24 @@
               <picture class="projects__picture">
                 <source
                   media="(min-width: 62.5em)"
-                  srcset="/assets/images/thumbnail-project-2-large.webp"
+                  src="/assets/images/project-2.png"
                 />
                 <img
                   class="projects__image"
-                  src="/assets/images/thumbnail-project-2-small.webp"
+                  src="/assets/images/project-2.png"
                   alt="screenshot of learning platform website with different courses"
                   width-="343"
                   height="253"
                 />
               </picture>
-              <h3 class="projects__name">Design Portfolio</h3>
+              <h3 class="projects__name">Restaurant Website</h3>
               <p class="projects__tags">
                 <span>HTML</span>
                 <span>CSS</span>
               </p>
               <div class="projects__links">
                 <a href="" class="underline">View Project</a>
-                <a href="" class="underline">View Code</a>
+                <a href="https://github.com/nadine-dawod/group-project.git" class="underline">View Code</a>
               </div>
             </div>
 
@@ -152,7 +162,7 @@
                 <img
                   class="projects__image"
                   src="assets/images/project-3.png"
-                  alt="screenshot of To Do App showing a list of active and complete tasks"
+                  alt="screenshot of Drag & Drop Game"
                   width-="343"
                   height="253"
                 />
@@ -165,8 +175,8 @@
                 <span>JavaScript</span>
               </p>
               <div class="projects__links">
-                <a href="" class="underline">View Project</a>
-                <a href="" class="underline">View Code</a>
+                <a href="#" class="underline">View Project</a>
+                <a href="https://github.com/Vardagsbruket/sundsgarden_game_dragndrop.git" class="underline">View Code</a>
               </div>
             </div>
           </div>
@@ -221,13 +231,6 @@
             </div>
           </form>
         </div>
-        <img
-          class="contact__rings"
-          src="/assets/images/pattern-rings.svg"
-          alt="deco"
-          width="530"
-          height="129"
-        />
       </section>
     </main>
 

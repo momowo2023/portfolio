@@ -182,17 +182,15 @@ svg {
   flex: 1 0 100%;
 }
 
-.header__social > svg > path {
-  transition: fill var(--transition);
+.header__social > a > i {
+  transition: transform var(--transition), color var(--transition);
+  transform: scale(1.5);
+  padding: 5px;
 }
 
-.header__social:hover > svg > path {
-  fill: var(--accent);
-}
-
-.header__social:hover{
-  cursor: pointer;
-  fill: brown;
+.header__social > a:hover > i {
+  transform: scale(2); 
+  color: var(--accent); 
 }
 
 @media (min-width: 37.5em) {
@@ -238,23 +236,6 @@ svg {
   translate: -50%;
   width: 174px;
   height: auto;
-}
-
-.hero__rings {
-  position: absolute;
-  right: 50%;
-  top: 130px;
-  /* 8.125rem; */
-  z-index: -1;
-  /* width: 33.125rem; */
-  height: auto;
-}
-
-.hero__circle {
-  position: relative;
-  top: 171px;
-  margin-bottom: -129px;
-  translate: calc(100vw - 64px - 16px);
 }
 
 .hero__text {
@@ -316,21 +297,6 @@ h1 > span {
     translate: 0;
   }
 
-  .hero__rings {
-    top: 90px;
-    right: auto;
-    left: 0;
-    translate: -50%;
-  }
-
-  .hero__circle {
-    position: absolute;
-    top: auto;
-    right: 0;
-    bottom: 190px;
-    translate: 50%;
-    z-index: 1;
-  }
 
   .hero__text {
     /* width: 62vw; */
@@ -375,16 +341,6 @@ h1 > span {
 
   .hero__image {
     margin-block-start: -199px;
-  }
-
-  .hero__rings {
-    top: 0px;
-    translate: -50% -50%;
-  }
-
-  .hero__circle {
-    top: 322px;
-    right: 445px;
   }
 
   .hero__text {
@@ -691,6 +647,11 @@ h1 > span {
 .contact__control button {
   background-color: transparent;
   border: none;
+}
+
+.contact__control.align-right button:hover {
+  transform: scale(0.9);
+  cursor: pointer;
 }
 
 .contact__invalid-icon {
