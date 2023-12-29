@@ -1,11 +1,11 @@
 /* GLOBAL */
 
 :root {
-  --bg-body: hsl(0, 0%, 8%);
-  --bg-body2: hsl(0, 0%, 14%);
+  --bg-body: hsl(0, 0%, 100%);
+  --bg-body2: hsl(0, 0%, 85%);
   --accent: hsl(153, 71%, 59%);
-  --text1: hsl(0, 0%, 100%);
-  --text2: hsl(0, 0%, 85%);
+  --text1: hsl(0, 0%, 8%);
+  --text2: hsl(0, 0%, 14%);
   --invalid: hsl(7, 100%, 68%);
   --fs-18: 1.125rem;
   --fs-88: 5.5rem;
@@ -188,6 +188,11 @@ svg {
 
 .header__social:hover > svg > path {
   fill: var(--accent);
+}
+
+.header__social:hover{
+  cursor: pointer;
+  fill: brown;
 }
 
 @media (min-width: 37.5em) {
