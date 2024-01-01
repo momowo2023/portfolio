@@ -147,9 +147,9 @@ svg {
 
 /* 600px */
 @media (min-width: 37.5em) {
-.wrapper {
-    width: calc(100% - 3.75rem);
-}
+    .wrapper {
+        width: calc(100% - 3.75rem);
+    }
 }
 
 /* UTILITY */
@@ -186,7 +186,7 @@ svg {
 .header__social > a > i {
     transition: transform var(--transition), color var(--transition);
     padding: 15px;
-    transform: scale(1.5);
+    transform: scale(1.3);
     color: var(--text3);
 }
 
