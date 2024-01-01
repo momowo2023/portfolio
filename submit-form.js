@@ -1,3 +1,4 @@
+/* JS PART NEEDS TO BE CHECKED WHEN OFFICIALLY LAUNCHED */
 let initSubject = '';
 
 function submitHandler() {
